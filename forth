@@ -62,6 +62,13 @@ symbol_table.STACK = function(...)
   end
 end -- STACK
 
+symbol_table.NEG = function(...)
+  local a = pop()
+  push(a * -1)
+end -- NEG
+
+
+
 --
 --  Dispatch
 ----------------
